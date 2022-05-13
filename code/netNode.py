@@ -1,4 +1,5 @@
 import sys
+import csv
 
 class NetNode:
     def __init__(self, number, successor, name, content, FAZ, SAZ, FEZ, SEZ, GP, FP):

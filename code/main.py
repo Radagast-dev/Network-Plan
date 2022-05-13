@@ -1,5 +1,5 @@
-import csv
 import sys
+import csv
 from netNode import NetNode
 from csvHelper import CsvHelper
 
@@ -10,6 +10,7 @@ FAZ_temp = 0
 
 #einlesen csv
 #https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/
+#https://ingo-janssen.de/csv-dateien-lesen-mit-python/
 
 #aufbau der instanzen
 #http://python4kids.net/how2think/kap17.htm
@@ -24,8 +25,8 @@ FAZ_temp = 0
 
 #Testinit Klassen
 net = NetNode
-net.halloDef()
-net.tschüssDef()
+net.buildNodesFromCSV(net)
+net.fillNodesWithValues(net)
 
 helper = CsvHelper
 helper.readCsv()
